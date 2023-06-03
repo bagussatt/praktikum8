@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UCP1_20210140003_A</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Gaya CSS */
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    /* Warna */
+
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+    }
+
+    .navbar-brand {
+      color: #343a40;
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link {
+      color: #343a40;
+    }
+
+    header {
+      background-color: #007bff;
+      color: #ffffff;
+    }
+
+    .carousel-inner {
+      background-color: #e9ecef;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border: 1px solid #dee2e6;
+      margin-bottom: 20px;
+    }
+
+    .card-img-top {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      color: #343a40;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: #ffffff;
+    }
+
+    .carousel-item img {
+      width: 800px; /* Atur lebar gambar */
+      height: 600px; /* Atur tinggi gambar */
+      object-fit: cover; /* Atur penyesuaian gambar */
+    }
+
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">A Day In My Life</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="d-flex justify-content-between align-items-center p-3">
+    <div>
+      <h1>Selamat Datang, Bagus!</h1>
+    </div>
+    <div>
+      <p id="date"></p>
+    </div>
+  </header>
+
+  <!-- Carousel -->
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="g1.jpg" class="d-block w-100" alt="Image 1">
+      </div>
+      <div class="carousel-item">
+        <img src="g2.jpg" class="d-block w-100" alt="Image 2">
+      </div>
+      <div class="carousel-item">
+        <img src="g3.jpg" class="d-block w-100" alt="Image 3">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Cards -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <img src="c1.jpeg" class="card-img-top" alt="Card 1">
+          <div class="card-body">
+            <h5 class="card-title">Bali</h5>
+            <p class="card-text">Bali adalah sebuah pulau di Indonesia yang terkenal sebagai tujuan wisata internasional. Pulau ini terletak di Kepulauan Sunda Kecil dan merupakan salah satu destinasi wisata paling populer di dunia. Bali menawarkan keindahan alam yang memukau, budaya yang kaya, pantai-pantai yang menakjubkan, tempat bersejarah, dan kehidupan malam yang seru.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <img src="c2.jpg" class="card-img-top" alt="Card 2">
+          <div class="card-body">
+            <h5 class="card-title">Daerah Istimewa Yogyakarta</h5>
+            <p class="card-text">Jogja, atau sering juga disebut dengan Yogyakarta, adalah sebuah kota di Indonesia yang terletak di Pulau Jawa. Jogja memiliki sejarah dan budaya yang kaya, serta merupakan salah satu pusat kegiatan kebudayaan, pendidikan, dan pariwisata di Indonesia.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <img src="c3.jpg" class="card-img-top" alt="Card 3">
+          <div class="card-body">
+            <h5 class="card-title">Aceh</h5>
+            <p class="card-text">Aceh memiliki kekayaan alam yang melimpah, termasuk hutan hujan tropis, pegunungan, dan pantai yang indah. Aceh juga dikenal sebagai "Serambi Mekah" karena memiliki sejarah panjang sebagai pusat penyebaran agama Islam di Nusantara. Agama Islam memainkan peran yang sangat penting dalam kehidupan masyarakat Aceh, dan provinsi ini menerapkan hukum syariah secara luas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center p-3">
+    <p>&copy; 2023 Bagus Satrio Samudra. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
